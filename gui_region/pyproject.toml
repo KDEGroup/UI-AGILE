@@ -1,0 +1,10 @@
+[project]
+name = "gui_region"
+version = "0.1.0"
+dependencies = [
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = []
+docs = []

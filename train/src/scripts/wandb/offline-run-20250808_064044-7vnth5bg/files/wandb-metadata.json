@@ -1,0 +1,140 @@
+{
+  "os": "Linux-5.15.0-143-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.9",
+  "startedAt": "2025-08-08T06:40:44.907572Z",
+  "args": [
+    "--resample_if_useless",
+    "true",
+    "--thinking_strategy",
+    "simple_thinkingv2",
+    "--grounding_only",
+    "false",
+    "--binary_grounding_reward",
+    "false",
+    "--pred_type",
+    "coord",
+    "--output_dir",
+    "/data/lsq/gui-agent-store/ckpt/UI-AGILE",
+    "--model_name_or_path",
+    "/mnt/82_store/huggingface_cache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "--data_file_paths",
+    "/data/lsq/gui-agent-store/training_data/train.json",
+    "--image_folders",
+    "/data/lsq/gui-agent-store/training_data/train_imgs",
+    "--dataset_name",
+    "9k",
+    "--deepspeed",
+    "../trl_train/local_scripts/zero3.json",
+    "--max_prompt_length",
+    "1024",
+    "--per_device_train_batch_size",
+    "2",
+    "--gradient_accumulation_steps",
+    "4",
+    "--logging_steps",
+    "1",
+    "--bf16",
+    "--report_to",
+    "wandb",
+    "--gradient_checkpointing",
+    "true",
+    "--attn_implementation",
+    "flash_attention_2",
+    "--max_pixels",
+    "12845056",
+    "--num_train_epochs",
+    "2",
+    "--save_steps",
+    "500",
+    "--save_only_model",
+    "false",
+    "--num_generations",
+    "8",
+    "--dataloader_drop_last"
+  ],
+  "program": "/data/lsq/UI-AGILE/train/src/scripts/../trl_train/src/open_r1/train.py",
+  "codePath": "train/src/trl_train/src/open_r1/train.py",
+  "git": {
+    "remote": "git@github.com:KDEGroup/UI-AGILE.git",
+    "commit": "a5e5e67e6a8e9f0de2cbab671ed09b1b636a3c58"
+  },
+  "root": "/data/lsq/UI-AGILE/train/src/scripts",
+  "host": "xmu26",
+  "executable": "/home/lsq/miniconda3/bin/python",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "1887919755264",
+      "used": "1580098662400"
+    }
+  },
+  "memory": {
+    "total": "540664655872"
+  },
+  "cpu": {
+    "count": 32,
+    "countLogical": 64
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-52e4e619-0f4a-be25-3bba-9af0b80e7f44"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-c8abf4d3-8601-e286-4929-fdb906c786ee"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-e948dfd3-7487-2f2d-deb2-d344ecbcf510"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-13268613-8416-a1c3-43e4-3028625b07de"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-cee46d4d-21e0-4dc2-ddd3-3fa0427970a4"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-640c5305-92ce-07f5-86cf-c0d700f3c68f"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-24efdb4c-7359-0f62-85ac-ddb84e35227c"
+    },
+    {
+      "name": "NVIDIA A800 80GB PCIe",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-9845a557-f123-212b-9bb0-f4340b77d14b"
+    }
+  ],
+  "cudaVersion": "12.8"
+}

@@ -1,0 +1,17 @@
+Prediction file: androidcontrol_high_test_fixed_scroll_wo_direction_pred.jsonl
+
+========================= Detailed Results by Category =========================
+android-click                  | Action Acc:  88.17% (4054/4598) | Grounding Acc:  62.01% (2851/4598)
+android-long_press             | Action Acc:   0.00% (0/7) | Grounding Acc:  14.29% (1/7)
+android-open_app               | Action Acc:  82.31% (456/554) | Text F1 Acc:    75.09% (416/554)
+android-press_back             | Action Acc:  33.65% (106/315)
+android-scroll                 | Action Acc:  66.26% (754/1138) | Text F1 Acc:    55.62% (633/1138)
+android-type                   | Action Acc:  95.43% (543/569) | Text F1 Acc:    78.73% (448/569)
+android-wait                   | Action Acc:  48.01% (253/527)
+
+============================ Overall Summary ============================
+Overall Action Accuracy : 79.99% (6166/7708)
+Overall Grounding Acc.  : 61.93% (2852/4605)
+Overall Text F1 Acc.    : 66.21% (1497/2261)
+Overall Success Rate    : 60.59% (4670/7708)
+======================================================================
