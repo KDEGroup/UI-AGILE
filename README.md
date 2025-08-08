@@ -4,9 +4,10 @@
 
 ## 🔥 Overview
 
-UI-AGILE enhances GUI agents through improved training with a Continuous Reward function, Simple Thinking reward, and **Cropping-based Resampling**, and inference with **Decomposed Grounding with Selection**.<a href="">
-  <img src="assets/UI-Crop-V1.drawio.png" alt="Logo" >
-</a>
+UI-AGILE enhances GUI agents through improved training with a Continuous Reward function, Simple Thinking reward, and **Cropping-based Resampling**, and inference with **Decomposed Grounding with Selection**.
+  
+<img src="assets/UI-Crop-V1.drawio.png" alt="Logo" >
+
 
 Trained on about only **9k** samples for just **2 epochs**, UI-AGILE shows superior performance, while also showcasing strong general agent capabilities. Furthermore, our inference method can act as a **plug-and-play enhancement** for a wide range of existing agents, improving the accuracy of some existing open-source models.
 
@@ -16,12 +17,12 @@ Trained on about only **9k** samples for just **2 epochs**, UI-AGILE shows super
 
 As a baseline, the standard grounding approach applied to UI-AGILE-7B completes the benchmark in **30 minutes**. When applying our method, the decomposed grounding stage takes **35 minutes**. The subsequent VLM-based selection stage requires additional **4 minutes**. The modest increase in overhead is a practical trade-off for the substantial gain of grounding accuracy brought by our method.
 
-<a href="">
-  <img src="assets/radar.png" alt="Logo" >
-
-
 
 <img src="assets/ScreenSpot-Pro.png" alt="Logo" >
+
+
+
+
 
 
 
