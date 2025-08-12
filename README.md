@@ -1,6 +1,6 @@
 # UI-AGILE: Advancing GUI Agents with Effective Reinforcement Learning and Precise Inference-Time Grounding
 
-<font size=4><div align='center' > [[📖 Paper](https://arxiv.org/abs/2507.22025)] [[🤗 Checkpoints](https://huggingface.co/KDEGroup/UI-AGILE)] [[🤗 Data](https://huggingface.co/KDEGroup/UI-AGILE-Data)] [[🤗 Daily Paper](https://huggingface.co/papers/2507.22025)] [[🚀 Github](https://github.com/KDEGroup/UI-AGILE)]</div></font>
+<font size=4><div align='center' > [[📖 Paper](https://arxiv.org/abs/2507.22025)] [[🤗 Checkpoints](https://huggingface.co/KDEGroup/UI-AGILE)] [[🤗 Data](https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data)] [[🤗 Daily Paper](https://huggingface.co/papers/2507.22025)] [[🚀 Github](https://github.com/KDEGroup/UI-AGILE)]</div></font>
 
 ## 🔥 Overview
 
