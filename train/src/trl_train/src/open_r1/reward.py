@@ -457,35 +457,6 @@ def binary_grounding_reward(completions, solution, scales, **kwargs):
 
 
 
-
-
-def simple_length_reward(completions, solution, scales, **kwargs):
-
-
-    g_rewards = grounding_reward(completions, solution, scales, **kwargs)
-    contents = [completion[0]["content"] for completion in completions]
-    
-    l_ideal = kwargs.get("l_ideal", 150)
-    sigma = kwargs.get("sigma", l_ideal / 2)
-
-    final_rewards = []
-    for content, g_reward in zip(contents, g_rewards):
-        reward = 0.0
-        if g_reward > 0:
-            think_match = re.search(r"<think>(.*?)</think>", content, re.DOTALL)
-            if think_match:
-                think_part = think_match.group(1).strip()
-                L = len(think_part)
-                diff = L - l_ideal
-                reward = math.exp(- (diff ** 2) / (2 * sigma ** 2))
-            else:
-                reward = 0.0
-        
-        final_rewards.append(reward)
-        
-    return final_rewards
-
-
 def plain_length_reward(completions, solution, scales, **kwargs):
 
 
@@ -504,10 +475,12 @@ def plain_length_reward(completions, solution, scales, **kwargs):
         return (1 - math.cos(x * math.pi)) / 2
 
     final_rewards = []
-    for content, g_reward in zip(contents, g_rewards):
+    for content, sol, g_reward in zip(contents, solution, g_rewards):
         reward = 0.0
-        
-        if g_reward > 0:
+        ground_truth_action = extract_action(sol)
+        if ground_truth_action != "click":
+            reward = 1.0
+        elif g_reward > 0:
             think_match = re.search(r"<think>(.*?)</think>", content, re.DOTALL)
             
             if think_match:

@@ -26,10 +26,10 @@ from transformers import Qwen2VLForConditionalGeneration
 # from open_r1.trainer import Qwen2VLGRPOTrainer
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from open_r1.trainer import Qwen2VLGRPOTrainer, Qwen2VLGRPOVLLMTrainer, Qwen2VLGRPOVLLMTrainerWithCropping, Qwen2VLGRPOTrainerWithCropping
+from open_r1.trainer import Qwen2VLGRPOTrainer, Qwen2VLGRPOTrainerWithCropping
 
 from open_r1.utils import *
-from open_r1.reward import action_reward, grounding_reward, format_reward_uir1_wrapper, simple_length_reward, plain_length_reward, parameter_reward, binary_grounding_reward
+from open_r1.reward import action_reward, grounding_reward, format_reward_uir1_wrapper, plain_length_reward, parameter_reward, binary_grounding_reward
 from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config
 
 import json
@@ -158,7 +158,6 @@ def main(script_args, training_args, model_args):
     reward_funcs_registry = {
         "action_reward": action_reward,
         "format_reward_uir1": format_reward_uir1_wrapper(script_args.thinking_strategy, script_args.pred_type),
-        "simple_length_reward": simple_length_reward,
         "plain_length_reward": plain_length_reward,
         "parameter_reward" : parameter_reward
     }
@@ -167,9 +166,7 @@ def main(script_args, training_args, model_args):
     else:
         reward_funcs_registry["grounding_reward"] = grounding_reward
     script_args.reward_funcs = ['action_reward','grounding_reward','format_reward_uir1', 'parameter_reward']
-    if script_args.thinking_strategy == "simple_thinking":
-        script_args.reward_funcs.append('simple_length_reward')
-    elif script_args.thinking_strategy == "simple_thinkingv2":
+    if script_args.thinking_strategy == "simple_thinkingv2":
         script_args.reward_funcs.append('plain_length_reward')
     reward_funcs = [reward_funcs_registry[func] for func in script_args.reward_funcs]
 
