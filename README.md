@@ -4,6 +4,7 @@
 
 ## 📣 News
 [2025/07/29] We release the preprint in arXiv.
+
 [2026/02/23] UI-AGILE has been accepted to the CVPR 2026 Findings Track.
 
 
