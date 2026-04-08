@@ -2,6 +2,11 @@
 
 <font size=4><div align='center' > [[📖 Paper](https://arxiv.org/abs/2507.22025)] [[🤗 Checkpoints](https://huggingface.co/KDEGroup/UI-AGILE)] [[🤗 Data](https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data)] [[🤗 Daily Paper](https://huggingface.co/papers/2507.22025)] [[🚀 Github](https://github.com/KDEGroup/UI-AGILE)]</div></font>
 
+## 📣 News
+
+[2026/02/23] UI-AGILE has been accepted to the CVPR 2026 Findings Track.
+
+
 ## 🔥 Overview
 
 UI-AGILE enhances GUI agents through improved training with a Continuous Reward function, Simple Thinking reward, and **Cropping-based Resampling**, and inference with **Decomposed Grounding with Selection**.
@@ -83,7 +88,7 @@ If you find this project useful, welcome to cite us.
 }
 ```
 
-
+In addition, you might be interested in our other projects: [KDEGroup/SWE-AGILE](https://github.com/KDEGroup/SWE-AGILE)
 
 ## 🤝 Acknowledgements
 
