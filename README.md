@@ -3,7 +3,7 @@
 <font size=4><div align='center' > [[📖 Paper](https://arxiv.org/abs/2507.22025)] [[🤗 Checkpoints](https://huggingface.co/KDEGroup/UI-AGILE)] [[🤗 Data](https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data)] [[🤗 Daily Paper](https://huggingface.co/papers/2507.22025)] [[🚀 Github](https://github.com/KDEGroup/UI-AGILE)]</div></font>
 
 ## 📣 News
-
+[2025/07/29] We release the preprint in arXiv.
 [2026/02/23] UI-AGILE has been accepted to the CVPR 2026 Findings Track.
 
 
